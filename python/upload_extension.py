@@ -107,11 +107,12 @@ def find_applicationId(host,token,name):
 	repositoryId=""
 	#Find extension by name and return repositoryId
 	#print(result)
-	for item in result["items"]:   
-		if (item["name"] == name):
-			print ("Found extension: " + item["name"])
-			repositoryId = item["repositoryId"]
-			break
+	if result:
+		for item in result["items"]:   
+			if (item["name"] == name):
+				print ("Found extension: " + item["name"])
+				repositoryId = item["repositoryId"]
+				break
 
 	if not repositoryId:
 		print(name + " Extension not Found")
