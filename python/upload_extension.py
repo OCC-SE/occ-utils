@@ -49,7 +49,7 @@ def import_file(host, token, file, extension_name):
 	start_file_upload_url = files_url + '/' + file_token
 	print ('Post file to: ' + start_file_upload_url)
 	s = occ_requests.post(start_file_upload_url, token, payload)
-	#print ('result = ' + json.dumps(s))
+	print ('result = ' + json.dumps(s))
 	
 def zip_extension(name, target_dir):            
     
@@ -74,10 +74,10 @@ def zip_extension(name, target_dir):
 def update_extension_metadata(extension_id, name, folder):		
 	
 	default_data = {}
-	default_data["createdBy"]="Oracle"
+	default_data["createdBy"]="OCC Regulators"
 	default_data["name"]= name
 	default_data["version"]=1
-	default_data["timeCreated"]="2019-01-01"
+	default_data["timeCreated"]="2020-01-01"
 	default_data["description"]="Sample extension"
 
 	data = {}
