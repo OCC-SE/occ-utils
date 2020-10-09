@@ -1,9 +1,9 @@
 # Host environment endpoints
-#host = 'https://ccadmin-{env}.oracleoutsourcing.com'
-host = 'https://asupremoc3dev-admin.demoservices011.commerce.oraclepdemos.com'
+host = 'https://ccadmin-{env}.oracleoutsourcing.com'
+#host = 'https://asupremoc3dev-admin.demoservices011.commerce.oraclepdemos.com'
 app_key = 'username={user}&password={pwd}'
-#mfa_app_key = 'username={user}&password={pwd}&totp_code=123456'
-mfa_app_key = 'username={user}&password={pwd}&totp_code=asupremoc3DEV'
+mfa_app_key = 'username={user}&password={pwd}&totp_code=123456'
+#mfa_app_key = 'username={user}&password={pwd}&totp_code=asupremoc3DEV'
 
 #Admin users
 admin_profiles_url = "{root_url}/ccadminui/v1/adminProfiles"
